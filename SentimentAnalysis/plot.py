@@ -29,7 +29,7 @@ def read_xlsx(filename):
 
 def draw_Timeline(Time_List, Score_List, Update_List):
 	#生成时间线对象
-	t1 = Timeline(init_opts=opts.InitOpts(width = '1750px', height = '700px', theme = ThemeType.LIGHT))
+	t1 = Timeline(init_opts=opts.InitOpts(width = '1600px', height = '700px', theme = ThemeType.LIGHT))
 	temp_Time_List = []
 	temp_Score_List = []
 	#配置时间轴参数
@@ -46,12 +46,12 @@ def draw_Timeline(Time_List, Score_List, Update_List):
 				break
 		#绘制折线并添加到时间线中
 		line = (
-			Line(init_opts=opts.InitOpts(theme = ThemeType.LIGHT, width = '2000px', height = '300px'))
+			Line(init_opts=opts.InitOpts(theme = ThemeType.LIGHT, width = '1200px', height = '300px'))
 			.add_xaxis(temp_Time_List)
-			.add_yaxis("横轴：评论时间 , 纵轴：情绪值", temp_Score_List, is_smooth = True, is_symbol_show = False)
+			.add_yaxis("情感值", temp_Score_List, is_smooth = True, is_symbol_show = False)
 			.set_global_opts(
-				yaxis_opts=opts.AxisOpts(name="情感值"),
-				xaxis_opts=opts.AxisOpts(name="时间"),
+				yaxis_opts=opts.AxisOpts(name="情感值", name_textstyle_opts = opts.TextStyleOpts(font_size = 18)),
+				xaxis_opts=opts.AxisOpts(name="时间", name_textstyle_opts = opts.TextStyleOpts(font_size = 18)),
 				legend_opts=opts.LegendOpts(is_show = False)
 				)
 				)
