@@ -1,12 +1,12 @@
 # appstoreCrawl & SentimentAnalysis  
 ## 描述
 -Crawl部分  
-  基于python，可抓取任意AppStore上app评论储存并切词的应用。  
-  同时提供了仅处理评论的应用及其依赖数据表。  
+>基于python，可抓取任意AppStore上app评论储存并切词的应用。  
+>同时提供了仅处理评论的应用及其依赖数据表。  
 -SentimentAnalysis部分  
-  基于python和百度aipNLP接口，对抓取到的app评论进行情感分析并储存  
-  使用pyecharts库，自动绘制评论情感值随时间变化的动态曲线，以及对评论抽样后得到的评论表格  
-  曲线每次动态变化以app版本更新为界，表格位于图像下方  
+>基于python和百度aipNLP接口，对抓取到的app评论进行情感分析并储存  
+>使用pyecharts库，自动绘制评论情感值随时间变化的动态曲线，以及对评论抽样后得到的评论表格  
+>曲线每次动态变化以app版本更新为界，表格位于图像下方  
   
 ## 使用说明  
 -依赖安装  
