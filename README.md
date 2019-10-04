@@ -6,8 +6,11 @@
   
 -SentimentAnalysis部分  
 * 基于python和百度aipNLP接口，对抓取到的app评论进行情感分析并储存  
+![](https://github.com/HumanAutomationInteractionLab-HAIL/appstoreCrawl/blob/master/SentimentAnalysis/SentimentAnalysisDemo.png)  
 * 使用pyecharts库，自动绘制评论情感值随时间变化的动态曲线，以及对评论抽样后得到的评论表格  
 * 曲线每次动态变化以app版本更新为界，表格位于图像下方  
+![](https://github.com/HumanAutomationInteractionLab-HAIL/appstoreCrawl/blob/master/SentimentAnalysis/timeline.png)    
+![](https://github.com/HumanAutomationInteractionLab-HAIL/appstoreCrawl/blob/master/SentimentAnalysis/table.png)  
   
 ## 使用说明  
 -依赖安装  
