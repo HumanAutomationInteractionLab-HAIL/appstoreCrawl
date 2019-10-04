@@ -1,0 +1,6 @@
+requests
+jieba
+xlrd
+xlwt
+baidu-aip
+pyecharts==1.5.1
