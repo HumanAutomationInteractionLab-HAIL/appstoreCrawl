@@ -49,6 +49,11 @@ def draw_Timeline(Time_List, Score_List, Update_List):
 			Line(init_opts=opts.InitOpts(theme = ThemeType.LIGHT, width = '2000px', height = '300px'))
 			.add_xaxis(temp_Time_List)
 			.add_yaxis("横轴：评论时间 , 纵轴：情绪值", temp_Score_List, is_smooth = True, is_symbol_show = False)
+			.set_global_opts(
+				yaxis_opts=opts.AxisOpts(name="情感值"),
+				xaxis_opts=opts.AxisOpts(name="时间"),
+				legend_opts=opts.LegendOpts(is_show = False)
+				)
 				)
 		t1.add(line, update_time)
 		temp_Time_List = []
