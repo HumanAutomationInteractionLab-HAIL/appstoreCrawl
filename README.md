@@ -1,8 +1,9 @@
 # appstoreCrawl & SentimentAnalysis  
 ## 描述
 -Crawl部分  
-* 基于python，可抓取任意AppStore上app评论储存并切词的应用。  
-* 同时提供了仅处理评论的应用及其依赖数据表。  
+* CrawlAndCut是一个基于python，可抓取任意AppStore上app评论储存并切词的应用。
+* CutOnly是一个基于python，可读取excel数据并切词的应用。
+* 提供了样例评论表和样例结果。  
   
 -SentimentAnalysis部分  
 * 基于python和百度aipNLP接口，对抓取到的app评论进行情感分析并储存  
@@ -17,7 +18,8 @@
 * pip install -r requirements.txt  
   
 -Crawl部分  
-* 在代码中将海尔智家的名字和id更改为所需app。  
+* CrawlAndCut在代码中将海尔智家的名字和id更改为所需app的名字与id。
+* CutOnly运行后直接输入需要处理的表格名字（表格应置于工程文件夹中，表格默认为xlsx格式，若不然请微调代码）。
 * 微调停用词列表从而因地制宜的享受切词。  
   
 -SentimentAnalysis部分  
